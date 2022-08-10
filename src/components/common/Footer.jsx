@@ -54,11 +54,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <span>
+      <span className="hidden">
         insipired with waxon theme
         <a href="https://marketifythemes.net/wp/waxon/1/">
           https://marketifythemes.net/wp/waxon/1/
-        </a>{" "}
+        </a>
       </span>
     </div>
   );
