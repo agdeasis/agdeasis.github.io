@@ -182,6 +182,7 @@ p {
 .fade {
   opacity: 0;
   transition: all 250ms linear 2s;
+  z-index: -1;
 }
 
 @keyframes spin {

@@ -13,7 +13,7 @@ const Contact = () => {
         </div>
         <div className="md:flex mt-[6rem]">
           <div className="md:w-1/2">
-            <div className="mt-4">
+            <div>
               <p>
                 Got something you'd like to discuss? New project or opportunity?
               </p>

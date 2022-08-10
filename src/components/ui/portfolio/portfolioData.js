@@ -55,9 +55,9 @@ export const PortFolioData = [
     link: "",
     tools: ["HTML", "Sass", "Vue Js", "Laravel"],
     short_description:
-      "<p> A government project that collects data on partnership engagements in all levels of governance for reporting purposes. All the data collected shall be used solely by the School, Division, Region and Central Office.</p>",
+      "<p> A Government project that collects data on partnership engagements in all levels of governance for reporting purposes. All the data collected shall be used solely by the School, Division, Region and Central Office.</p>",
     description:
-      "<p>A government project that collects data on partnership engagements in all levels of governance for reporting purposes. All the data collected shall be used solely by the School, Division, Region and Central Office</p> <br> <b>This project is under development.</b> ",
+      "<p>A Government project that collects data on partnership engagements in all levels of governance for reporting purposes. All the data collected shall be used solely by the School, Division, Region and Central Office</p> <br> <b>This project is under development.</b> ",
   },
   {
     id: 6,

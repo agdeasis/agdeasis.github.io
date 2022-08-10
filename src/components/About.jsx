@@ -31,8 +31,8 @@ const About = () => {
               <div className="mt-10 about-description">
                 <p>I have been in the industry for five years.</p>
                 <p>
-                  My work experience a company and freelance developer helped me
-                  to gain proficient understanding of various tools used in
+                  My work experience as a company and freelance developer helped
+                  me to gain proficient understanding of various tools used in
                   creating web applications.
                 </p>
                 <p>
