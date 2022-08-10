@@ -37,7 +37,7 @@ const About = () => {
                 </p>
                 <p>
                   I make sure to collaborate with the entire team involved in
-                  the development process.{" "}
+                  the development process.
                 </p>
 
                 <div className="my-10 pt-9 text-center md:text-left">
