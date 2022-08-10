@@ -7,7 +7,7 @@ const Tools = () => {
       <div className="overflow-x-clip">
         <h1 className=" header-title">
           Tools
-          <span>TECHNOLOGIES </span>
+          <span>TECHNOLOGIES</span>
         </h1>
         <i className="mt-10 block">Techonologies and tools that I use.</i>
       </div>
