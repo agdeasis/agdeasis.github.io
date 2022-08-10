@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;1,300&family=Poppins:wght@300;400;500;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Mulish", sans-serif;
+  color: #6d6b6b;
+  font-size: 1rem;
+}
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.container {
+  // max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.main-font {
+  @include text-main-font;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.sec-wrapper {
+  padding: 160px 0px 130px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  @include text-main-font;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  transition: all 350ms ease-in-out;
+
+  &:hover {
+    background-color: $accent;
+    transition: all 350ms ease-in-otransut;
+  }
+}
+
+.btn-dark {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: $dark;
+  padding: 20px 50px;
+  border: 1px solid $dark;
+  transition: all 350ms ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    border: 2px solid $dark;
+    color: $dark;
+    font-weight: bold;
+  }
+}
+
+section {
+  &:before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+  }
+}
+
+p {
+  line-height: 1.8;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.tool-img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.5 ease-out;
+
+  &:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transition: all 0.5s ease-out;
+  }
+}
+
+.portfolio-item {
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 5%);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 14px 25px;
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+  border: 1px solid #cccc;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.medias {
+  display: flex;
+  align-items: center;
+  a {
+    margin: 0.7rem;
+    width: 30px;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.medias.footer {
+  img {
+    width: 20px;
+  }
+  a {
+    margin: 0 0.7rem;
+  }
+}
+
+.box-exp {
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+}
+
+@media only screen and (min-width: 1536px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 40px !important;
+  }
+}

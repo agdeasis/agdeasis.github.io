@@ -1,0 +1,152 @@
+header {
+  width: 100%;
+  padding: 1.5em 2em 1.5em;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  color: $dark;
+}
+.navbar {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  /* position: relative; */
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 600;
+  font-size: 1.25rem;
+  @include text-main-font;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  transition: all 200ms ease;
+  cursor: pointer;
+  transition: all 500ms;
+  @include text-main-font;
+  font-weight: 600;
+}
+nav ul li:hover {
+  border-bottom: 2px solid #696868;
+  color: #696868;
+  font-size: 1.2rem;
+}
+#burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #burger {
+    box-sizing: initial;
+    display: block;
+    width: 1rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+  }
+  #burger:focus {
+    border: none;
+    outline: none;
+  }
+  nav {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    top: 64px;
+    width: 100%;
+    height: 100vh;
+    padding: 2em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    clip-path: circle(0% at 100% 0);
+    transition: all 500ms ease-in-out;
+  }
+  nav.show {
+    clip-path: circle(200% at 100% 0);
+    transition-duration: 500ms;
+  }
+  nav ul {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    margin-top: 101px;
+    font-size: 1.5rem;
+  }
+}
+
+/* footer start */
+
+footer {
+  background-color: #080808;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  margin-top: auto;
+}
+
+footer .social-links > * {
+  margin-right: 1em;
+  font-size: 1.2rem;
+}
+footer .social-links a {
+  transition: color 300ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: #fb923c;
+}
+footer p a {
+  position: relative;
+  z-index: 2;
+  transition: color 300ms ease-in-out;
+}
+footer p a:hover {
+  color: #fb923c;
+}
+footer p a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  z-index: 0;
+  opacity: 70%;
+  background-color: #fb923c;
+}
+
+.navbar-white {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container p {
+    margin-block: 0.3em;
+  }
+
+  nav {
+    background-color: $dark;
+    color: #fff;
+    top: 80px;
+  }
+}
+
+/* footer end */
